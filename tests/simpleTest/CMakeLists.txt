@@ -1,7 +1,5 @@
 include_directories(${GTEST_INCLUDE_DIRS})
 
-executable(simpleTest 
+executable_test(simpleTest 
             SOURCES ./
             MODULES gtest gtest_main)
-
-add_test(AllTests simpleTest)
