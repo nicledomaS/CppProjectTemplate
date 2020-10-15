@@ -4,12 +4,14 @@
 C++ project template
 
 ## Build project
-cmake -B build -DFIND_MODULES=ON -DENABLE_TIDY=ON -DFIND_TESTS=ON
-cmake --build build/ -j4
+`cmake -B build -DFIND_MODULES=ON -DFIND_TESTS=ON -DENABLE_TIDY=ON`
+
+`cmake --build build/ -j4`
 
 ## Run tests
-cd build
-ctest
+`cd build`
+
+`ctest`
 
 [Cmake scripts for build c++ projects](https://github.com/nicledomaS/cmake/blob/master/README.md)
 
