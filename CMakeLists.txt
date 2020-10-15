@@ -2,7 +2,9 @@ cmake_minimum_required(VERSION 3.10)
 
 project(CppProjectTemplate)
 
-include(cmake/make.cmake)
+if(NOT make_initialize)
+    include(cmake/make.cmake)
+endif()
 
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
@@ -12,5 +14,4 @@ executable(${PROJECT_NAME}
             SOURCES "src/"
             THREADS
             #BOOST system
-            #MODULES gpio_dev
-            )
+            MODULES gpio_dev)
