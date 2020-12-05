@@ -24,4 +24,4 @@ jobs:
     - uses: actions/upload-artifact@v2
       with:
         path: build/*.tar.gz
-        name: artifact ${{ matrix.os }}
+        name: artifact ${{ matrix.os }}_${{ matrix.configs }}
