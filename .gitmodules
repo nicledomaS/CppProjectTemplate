@@ -7,3 +7,6 @@
 [submodule "modules/pugixml"]
 	path = modules/pugixml
 	url = https://github.com/zeux/pugixml.git
+[submodule "modules/gsl"]
+	path = modules/gsl
+	url = https://github.com/microsoft/GSL.git
