@@ -13,7 +13,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2.0.0
     - name: Build project
-      uses: nicledomaS/cmake_build_action@v1.3
+      uses: nicledomaS/cmake_build_action@add_telegraph
       with:
         config: ${{ matrix.configs }}
         submodule_update: ON
@@ -21,6 +21,8 @@ jobs:
         unit_test_build: -DFIND_TESTS=ON
         cmake_args: -DFIND_MODULES=ON;-DENABLE_TIDY=ON
         create_package: ON
+        t_token: ${{ secrets.TTOKEN }}
+        t_chat_id: ${{ secrets.TCHATID }}
     - uses: actions/upload-artifact@v2
       with:
         path: build/*.tar.gz
