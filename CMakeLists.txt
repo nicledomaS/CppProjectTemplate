@@ -21,6 +21,7 @@ endif()
 executable(${PROJECT_NAME}
             SOURCES "src/"
             THREADS
+            CONAN_MODULES
             #BOOST system
             MODULES pugixml GSL)
 
