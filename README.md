@@ -4,7 +4,7 @@
 C++ project template
 
 ## Build project
-`cmake -B build -DFIND_MODULES=ON -DFIND_CONAN=ON -DFIND_TESTS=ON -DENABLE_TIDY=ON`
+`cmake -B build -DCMAKE_BUILD_TYPE=Debug -DFIND_MODULES=ON -DFIND_CONAN=ON -DFIND_TESTS=ON -DENABLE_TIDY=ON`
 
 `cmake --build build/ -j4`
 
