@@ -20,7 +20,7 @@ jobs:
         conan --version
         conan profile new default --detect
     - name: Build project
-      uses: nicledomaS/cmake_build_action@v1.4
+      uses: nicledomaS/cmake_build_action@add_core_module
       with:
         config: ${{ matrix.configs }}
         submodule_update: ON
